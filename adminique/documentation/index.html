@@ -1,0 +1,669 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Adminique - Documentation</title>
+	
+	<meta name="description" content="Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form here:
+http://themeforest.net/user/gawibowo
+Thanks so much!">
+	<meta name="author" content="gawibowo">
+	<meta name="copyright" content="gawibowo">
+	<meta name="generator" content="Documenter v1.4 http://rxa.li/documenter">
+	<meta name="date" content="2011-08-12T22:41:04+02:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	<script src="js/jquery.1.5.1.js"></script>
+	<script src="js/cufon.js"></script><script src="js/font.js"></script>
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<!--link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushPhp.js"></script>
+	<script src="js/shBrushPlain.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script-->
+	
+	<link rel="stylesheet" href="css/highlight.css" />
+	<script src="js/highlight.js"></script>
+	<script>
+		$(function() {
+			$('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
+		});
+	</script>
+
+	<script>document.createElement('section');var duration=500,easing='easeOutExpo';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#EFEFEF;color:#1C140D;}
+		::-moz-selection{background:#CBE86B;color:#1C140D;}
+		::selection{background:#CBE86B;color:#1C140D;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#889C48;}
+		hr{border-top:1px solid #CCCCCC;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#F2E9E1;color:#1C140D;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #FFF6ED;-moz-text-shadow:1px 1px 0px #FFF6ED;text-shadow:1px 1px 0px #FFF6ED;}
+		#documenter_sidebar ol{border-top:1px solid #D1C9C2;}
+		#documenter_sidebar ol a{border-top:1px solid #FFF6ED;border-bottom:1px solid #D1C9C2;color:#1C140D;}
+		#documenter_sidebar ol a:hover{background:#CBE86B;color:#1C140D;border-top:1px solid #CBE86B;}
+		#documenter_sidebar ol a.current{background:#CBE86B;color:#1C140D;border-top:1px solid #CBE86B;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#directory_and_file_structure">Directory and File Structure</a></li>
+			<li><a href="#html_structure">Layout Structure</a>
+				<ol>
+					<li><a href="#general_structure">General Structure</a></li>
+					<li><a href="#content_structure">Content Structure</a></li>
+				</ol>
+			</li>
+			<li><a href="#grid_system">Grid System</a></li>
+			<li><a href="#theme_elements">Theme Elements</a>
+				<ol>
+					<li><a href="#dropdown_menu">Dropdown Menu</a></li>
+					<li><a href="#tabs">Tabs</a></li>
+					<li><a href="#accordion">Accordion</a></li>
+					<li><a href="#form">Form</a></li>
+					<li><a href="#datatables">DataTables</a></li>
+					<li><a href="#boxes">Collapsible Boxes</a></li>
+					<li><a href="#message">Message Boxes</a></li>
+					<li><a href="#modal">Modal Boxes</a></li>
+					<li><a href="#sortable">Sortable Elements</a></li>
+				</ol>
+			</li>
+			<li><a href="#css">CSS Files and Structure</a></li>
+			<li><a href="#javascript">Javascript</a></li>
+			<li><a href="#sources_and_credits">Sources and Credits</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright gawibowo 2011<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.4</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Adminique</h1><h2>Documentation</h2><hr><ul><li>Created: 08/13/2011</li><li>By: gawibowo</li><li><a href="http://gawibowo.com">http://gawibowo.com</a></li></ul><p>Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form here:<br>
+<a href="http://themeforest.net/user/gawibowo?ref=gawibowo">http://themeforest.net/user/gawibowo</a><br>
+Thanks so much!</p></section>
+
+<section id="about">
+	<h3>About</h3><hr class="notop">
+	<p>This theme is a html5 template designed for admin user interface. It has client side features which is the starting point of your web application or Content Management System (CMS).</p>
+	<p>Please note that this theme is NOT a ready to use CMS. It contains a lot of client side scripts (Javascript) but didn&#39;t come with server side script (PHP/ASP/JSP etc). The purpose of this item is to provide you basic features for your own web application or CMS.</p>
+</section>
+
+<section id="directory_and_file_structure">
+	<h3>Directory and File Structure</h3><hr class="notop">
+<ul>
+	<li><strong>css</strong>: contains all stylesheet files
+		<ul>
+			<li><strong>skins</strong>: contains all skins file</li>
+			<li><strong>smoothness</strong>: contains all styles and images for jQuery UI plugin</li>
+			<li><strong>demo_table_jui.css</strong>: css for DataTables demo</li>
+			<li><strong>facebox.css</strong>: css for facebox (jQuery modal box plugin)</li>
+			<li><strong>grid.css</strong>: css for grid system</li>
+			<li><strong>jquery.wysiwyg.css</strong>: css for jQuery WYSIWYG editor plugin</li>
+			<li><strong>reset.css</strong>: css reset file from html5doctor.com</li>
+			<li><strong>style.css</strong>: main css file</li>
+			<li><strong>superfish.css</strong>: css for superfish dropdown menu</li>
+			<li><strong>uniform.default.css</strong>: css for uniform (form plugin)</li>
+		</ul>
+	</li>
+	<li><strong>images</strong>: directory for storing images</li>
+	<li><strong>js</strong>: contains javascript files
+		<ul>
+			<li><strong>cufon-yui.js</strong>: cufon (Font Replacement) main file</li>
+			<li><strong>custom.js</strong>: custom script for setting plugins and other script</li>
+			<li><strong>Delicious_500.font.js</strong>: Delicious font (used with cufon-yui.js)</li>
+			<li><strong>excanvas.min.js</strong>: for use with jQuery flot</li>
+			<li><strong>facebox.js</strong> : for modal boxes</li>
+			<li><strong>html5.js</strong>: enable html 5 in IE browser</li>
+			<li><strong>jquery-1.4.4.min.js</strong>: jQuery javascript framework</li>
+			<li><strong>jquery.cookie.js</strong>: for storing cookie</li>
+			<li><strong>jquery.dataTables.min.js</strong> : for table</li>
+			<li><strong>jquery.flot.min.js</strong> : for creating charts</li>
+			<li><strong>jquery.uniform.min.js</strong> : for styling checkbox, radio buttons and input file</li>
+			<li><strong>jquery.validate.min.js</strong> : for form validation</li>
+			<li><strong>jquery.wysiwyg.js</strong> : for converting textarea to HTML editor</li>
+			<li><strong>jquery-ui-1.8.8.custom.min.js</strong> : jQuery UI, for date picker and sortable elements</li>
+			<li><strong>PIE.htc</strong> : enable some of CSS3 features in IE browser</li>
+			<li><strong>selectivizr.js</strong> : emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8</li>
+			<li><strong>superfish.js</strong> : for multi-level dropdown menu</li>
+			<li><strong>switcher.js</strong> : for color switcher and fixed/fluid switcher</li>
+		</ul>
+	</li>
+	<li><strong>1-column.html</strong></li>
+	<li><strong>3-columns.html</strong></li>
+	<li><strong>dashboard.html</strong></li>
+	<li><strong>forms.html</strong></li>
+	<li><strong>gallery.html</strong></li>
+	<li><strong>login.html</strong></li>
+	<li><strong>news.html</strong></li>
+	<li><strong>settings.html</strong></li>
+	<li><strong>sticky-footer.html</strong></li>
+	<li><strong>styles.html</strong></li>
+	<li><strong>tables.html</strong></li>
+</ul>
+</section>
+
+<section id="html_structure">
+	<h3>Layout Structure</h3><hr class="notop">
+		<p>This theme is a fixed/liquid layout with two columns. All of the information within the main content area is nested within a section with an id of "main". The sidebar's content is within an aside with an id of "sidebar". The general template structure is the same throughout the template. Here is the general structure.</p>
+		
+
+<h4 id="general_structure">General Structure</h4>
+
+<p>The general page structure is divided into 4 parts: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code> and <code>&lt;footer&gt;</code>.</p>
+
+<img src="assets/images/general-structure.png" alt="general structure" />
+
+<pre class="code" lang="html">
+&lt;body&gt;
+	&lt;header id=&quot;top&quot;&gt;&lt;/header&gt;
+	&lt;nav id=&quot;topmenu&quot;&gt;&lt;/nav&gt;
+	&lt;section id=&quot;content&quot;&gt;&lt;/section&gt;
+	&lt;footer id=&quot;bottom&quot;&gt;&lt;/footer&gt;
+&lt;/body&gt;
+</pre>
+		
+		
+<h4 id="content_structure">Content Structure</h4>
+
+<p>The content area (<code>&lt;section id=&quot;content&quot;&gt;</code>) is divided into 2 columns: the <code>&lt;section id=&quot;main&quot;&gt</code> for main content and <code>&lt;aside id=&quot;sidebar&quot;&gt;</code> for sidebar.</p>
+
+<img src="assets/images/content-structure.png" alt="content structure" />
+
+<pre class="code" lang="html">
+&lt;section id=&quot;main&quot;&gt;
+	&lt;article&gt;
+		&lt;h1&gt;Heading&lt;/h1&gt;
+		
+		&lt;h2&gt;Heading&lt;/h2&gt;
+		&lt;div&gt;content here....&lt;/div&gt;
+		
+		&lt;h2&gt;Heading&lt;/h2&gt;
+		&lt;div&gt;content here....&lt;/div&gt;
+	&lt;/article&gt;
+	&lt;article&gt;
+		&lt;h1&gt;Heading&lt;/h1&gt;
+		
+		&lt;h2&gt;Heading&lt;/h2&gt;
+		&lt;section&gt;content here....&lt;/section&gt;
+		
+		&lt;h2&gt;Heading&lt;/h2&gt;
+		&lt;section&gt;content here....&lt;/section&gt;
+	&lt;/article&gt;
+&lt;/section&gt;
+
+&lt;aside id=&quot;sidebar&quot;&gt;
+	&lt;div class=&quot;box&quot;&gt;
+		&lt;h2&gt;Heading&lt;/h2&gt;
+		&lt;section&gt;
+			content here....
+		&lt;/section&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;box&quot;&gt;
+		&lt;h2&gt;Heading&lt;/h2&gt;
+		&lt;section&gt;
+			content here....
+		&lt;/section&gt;
+	&lt;/div&gt;
+&lt;/aside&gt;
+</pre>
+
+</section>
+
+<section id="grid_system">
+<h3>Grid System</h3><hr class="notop">
+<p>This theme uses grid system generated from <a href="http://www.spry-soft.com/grids/">Variable Grid System</a>. The layout is 12-column grid.
+<p>Examples of using the grid:</p>
+<p>2 columns:</p>
+<pre class="code" lang="html">
+<div class="container_12">
+	<div class="grid_3">
+		{LEFT COLUMN}
+	</div>
+	<div class="grid_9">
+		{RIGHT COLUMN}
+	</div>
+</div>
+</pre>
+<p>3 columns:</p>
+<pre class="code" lang="html">
+<div class="container_12">
+	<div class="grid_3">
+		{LEFT COLUMN}
+	</div>
+	<div class="grid_6">
+		{MIDDLE COLUMN}
+	</div>
+	<div class="grid_3">
+		{RIGHT COLUMN}
+	</div>
+</div>
+</pre>
+<p>You can create up to 12 columns layout with this grid system.</p>
+<p>For this theme I use this markup for 2 columns:</p>
+<pre class="code" lang="html">
+<section class="container_12 clearfix">
+	<section id="main" class="grid_9 push_3">
+		{RIGHT COLUMN}
+	</section>
+	<aside id="sidebar" class="grid_3 pull_9">
+		{LEFT COLUMN}
+	</aside>
+</section>
+</pre>
+<p>By using the push_xx and pull_xx classes, elements can be rearranged, so the order in the markup is the right column (main content) first before the left column (sidebar).</p>
+</section>
+
+<section id="theme_elements">
+	<h3>Theme Elements</h3><hr class="notop">
+<p>This theme has some elements that use javascript (from plugins or custom scripts) to create rich user interfaces.</p>
+
+<h4 id="dropdown_menu">Dropdown Menu</h4>
+<p>The main menu uses dropdown menu with the help of jQuery superfish plugin. Use unordered list with <code>class=sf-menu</code> for the links. This menu supports multi level nested menu. To create submenu, you can nest <code>ul</code> inside an <code>li</code>.<br>
+This is the markup for the drop-down menu:</p>
+<pre class="code" lang="html">
+<ul id="mainmenu" class="sf-menu">
+	<li class="current"><a href="#">Link 1</a></li>
+	<li><a href="#">Link 2</a></li>
+	<li><a href="#">Link 3</a></li>
+	<li><a href="#">Link 4</a></li>
+	<li><a href="#">link 5</a>
+		<ul>
+			<li><a href="#">Sub Link 1</a></li>
+			<li><a href="#">Sub Link 2</a></li>
+			<li><a href="#">Sub Link 3</a></li>
+			<li><a href="#">Sub Link 4</a></li>
+		</ul>
+	</li>
+</ul>
+</pre>
+<p>The <code>class=current</code> in the list is for highlighting the menu. This is usually used for the current active menu. In the above example, Link 1 will be highlighted.</p>
+
+<img src="assets/images/superfish.png" alt="superfish menu" />
+
+<h4 id="tabs">Tabs</h4>
+<p>Use an unordered list for the tab links, and follow up with the <code>tabcontent</code> div below it for the contents. Each link has a <code>href</code> attribute that matches the ID of the div inside <code>.tabcontent</code><br>
+This is the basic markup for generating tabbed content:</p>
+<pre class="code" lang="html">
+<ul class="tabs">
+	<li><a href="#tabs-1">Tab 1</a></li>
+	<li><a href="#tabs-2">Tab 2</a></li>
+	<li><a href="#tabs-3">Tab 3</a></li>
+	<li><a href="#tabs-4">Tab 4</a></li>
+</ul>
+<div class="tabcontent">
+	<div id="tabs-1">
+		Content 1
+	</div>
+	<div id="tabs-2">
+		Content 2
+	</div>
+	<div id="tabs-3">
+		Content 3
+	</div>
+	<div id="tabs-4">
+		Content 4
+	</div>
+</div>
+</pre>
+
+<img src="assets/images/tabs.png" alt="tabs" />
+
+<h4 id="accordion">Accordion</h4>
+<p>Use a div with <code>class=accordion</code>. Each section uses h3 for section title and div for section content. When each section title clicked, the section content below the title will showed and other sections will be hidden.<br>
+This is the basic markup for generating accordion:</p>
+<pre class="code" lang="html">
+<div class="accordion">
+	<h3>Section 1</h3>
+	<div>Content 1</div>
+	
+	<h3>Section 2</h3>
+	<div>Content 2</div>
+	
+	<h3>Section 3</h3>
+	<div>Content 3</div>
+	
+	<h3>Section 4</h3>
+	<div>Content 4</div>
+</div>
+</pre>
+
+<img src="assets/images/accordion.png" alt="accordion" />
+
+<h4 id="form">Form</h4>
+<p>Use a form with <code>class=uniform</code> to create a styled form. Each form elements can be separated by using definition list elements (<code>dl, dt, dd</code>).<br>
+This is the basic markup for generating form:</p>
+<pre class="code" lang="html">
+<form class="uniform">
+	<dl>
+		<dt><label for="input1">Input 1</label></dt>
+		<dd>
+			<input type="text" id="input1">
+			<small>An input description</small>
+		</dd>
+		<dt><label for="input2">Input 2</label></dt>
+		<dd>
+			<input type="text" id="input2">
+		</dd>
+	</dl>
+	<div>
+		<button type="submit" class="button">Button</button>
+	</div>
+</form>
+</pre>
+
+<img src="assets/images/form1.png" alt="form" />
+
+<p>To make form inputs inline with the labels (input at the right of label), just add <code>class=inline</code> attribute in the <code>dl</code>:</p>
+<pre class="code" lang="html">
+<form class="uniform">
+	<dl class="inline">
+		<dt><label for="input1">Input 1</label></dt>
+		<dd>
+			<input type="text" id="input1">
+			<small>An input description</small>
+		</dd>
+		<dt><label for="input2">Input 2</label></dt>
+		<dd>
+			<input type="text" id="input2">
+		</dd>
+	</dl>
+	<div class="buttons">
+		<button type="submit" class="button">Button</button>
+	</div>
+</form>
+</pre>
+
+<img src="assets/images/form2.png" alt="inline form" />
+
+<p>To add a validation in the form, add an id in the form, for example <code>&lt;form id=&quot;loginform&quot;&gt;</code>, and add this javascript code:</p>
+<pre class="code" lang="javascript">
+$(document).ready(function() {
+	$('#loginform').validate();
+});
+</pre>
+
+<h4 id="datatables">DataTables</h4>
+<p>Here is the general structure of a table:</p>
+<pre class="code" lang="html">
+<table>
+	<thead>
+		<tr>
+			<th>Column 1</th>
+			<th>Column 2</th>
+			<th>Column 3</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Lorem Ipsum 1</td>
+			<td>dolor sit amet</td>
+			<td>consectetur adipiscing elit</td>
+		</tr>
+		<tr>
+			<td>Lorem Ipsum 2</td>
+			<td>dolor sit amet</td>
+			<td>consectetur adipiscing elit</td>
+		</tr>
+	</tbody>
+</table>
+</pre>
+
+<p>You can activate datatables on any table. Just add an id on a table, for example <code>&lt;table id=&quot;data&quot;&gt;</code>, and add this javascript code:</p>
+<pre class="code" lang="javascript">
+$(document).ready(function() {
+	$('#data').dataTable();
+});
+</pre>
+For more detail on datatables plugin, please check the official plugin site <a href="http://www.datatables.net/">here</a>.
+
+<h4 id="boxes">Collapsible boxes</h4>
+<p>The boxes in the sidebar can be toggled to show or hide their content. Click on the arrow icon at the top right of the box. The html structure:</p>
+<pre class="code" lang="html">
+<div class="box">
+	<h2>Title</h2>
+	<section>
+		Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque.
+	</section>
+</div>
+</pre>
+
+<p>It is also possible to have default state closed at page load, just add <code>closed</code> class in the <code>div</code>:</p>
+<pre class="code" lang="html">
+&lt;div class=&quot;box closed&quot;&gt;
+</pre>
+
+<img src="assets/images/collapsible-boxes.png" alt="collapsible boxes" />
+
+<h4 id="message">Message boxes</h4>
+<p>Message boxes are simple boxes to show notifications with different colors for each type. There are 4 types of message: <br>
+<ul>
+	<li>success</li>
+	<li>error</li>
+	<li>warning</li>
+	<li>information</li>
+</ul>
+The html structure:</p>
+<pre class="code" lang="html">
+<div class="success msg">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+</div>
+
+<div class="error msg">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+</div>
+
+<div class="warning msg">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+</div>
+
+<div class="information msg">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+</div>
+</pre>
+
+<img src="assets/images/message-boxes.png" alt="message boxes" />
+
+<p>Each message boxes can be clicked and it will hide with animation effect.</p>
+
+<h4 id="modal">Modal boxes</h4>
+<p>This theme uses facebox for modal boxes. You can display images, divs, or entire remote pages. Use the <code>rel=facebox</code> in a link to activate facebox:</p>
+
+<pre class="code" lang="html">
+<a href="image.jpg" rel="facebox">View image</a>
+
+<a href="#info" rel="facebox">View info div</a>
+
+<a href="about.html" rel="facebox">View about.html</a>
+</pre>
+
+<img src="assets/images/facebox.png" alt="facebox" />
+
+<p>For more info about facebox, please visit the plugin site <a href="http://defunkt.io/facebox/">here</a></p>
+
+<h4 id="sortable">Sortable Elements</h4>
+<p>With jQuery UI Sortable plugin you can make elements sortable by dragging with the mouse. To activate this plugin, add <code>sortable</code> class in a table or ul.</p>
+
+<pre class="code" lang="html">
+<ul class="photos sortable">
+	<li><img src="photo1.jpg"></li>
+	<li><img src="photo2.jpg"></li>
+	<li><img src="photo3.jpg"></li>
+	<li><img src="photo4.jpg"></li>
+</ul>
+</pre>
+
+<p>For more info about sortable, please visit the plugin site <a href="http://jqueryui.com/demos/sortable/">here</a></p>
+
+</section>
+
+<section id="css">
+<h3>CSS Files and Structure</h3><hr class="notop">
+<p>This theme includes these CSS files:</p>
+
+<ul>
+	<li>Main:
+		<ul>
+			<li><code>style.css</code> : this is the main css file.</li>
+			<li><code>reset.css</code> : this file is imported from style.css.</li>
+			<li><code>grid.css</code> : this file is imported from style.css</li>
+		</ul>
+	</li>
+	<li>CSS for skins. Use one of these files for color variations:
+		<ul>
+			<li><code>black.css</code></li>
+			<li><code>blue.css</code></li>
+			<li><code>gray.css</code></li>
+			<li><code>green.css</code></li>
+			<li><code>orange.css</code></li>
+			<li><code>purple.css</code></li>
+			<li><code>red.css</code></li>
+			<li><code>yellow.css</code></li>
+		</ul>
+	</li>
+	<li>CSS for plugins:
+		<ul>
+			<li><code>facebox.css</code></li>
+			<li><code>jquery.wysiwyg.css</code></li>
+			<li><code>superfish.css</code></li>
+			<li><code>uniform.default.css</code></li>
+			<li><code>jquery-ui-1.8.8.custom.css</code></li>
+			<li><code>demo_table_jui.css</code></li>
+		</ul>
+	</li>
+</ul>
+		
+<p>Example of css structure:</p>
+
+<pre class="code" lang="html">
+&lt;!-- MAIN CSS --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/style.css&quot;&gt;
+
+&lt;!-- SKINS --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/skins/blue.css&quot;&gt;
+
+&lt;!-- PLUGINS --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/superfish.css&quot;&gt;
+</pre>
+
+
+<h4>Fixed/Fluid Layouts</h4>
+
+<p>The default layout for this theme is a fixed layout. You can switch from fixed to fluid layout by adding <code>fluid</code> class to the <code>body</code>.</p>
+
+<p>Fixed layout:</p>
+<pre class="code" lang="html">
+&lt;body&gt;
+...
+&lt;/body&gt;
+</pre>
+<p>Fluid layout:</p>
+<pre class="code" lang="html">
+&lt;body class=&quot;fluid&quot;&gt;
+...
+&lt;/body&gt;
+</pre>
+
+<p>The fixed layout is using a fixed 960 pixels width, whereas the fluid layout is using percentage width (so the view is adjusted to the user&#39;s screen resolution).</p>
+
+</section>
+
+<section id="javascript">
+<h3>Javascript</h3><hr class="notop">
+<p>This theme imports these Javascript files:</p>
+
+<ul>
+	<li>Javascripts for IE browser (to enable html5 and some css selectors):
+		<ul>
+			<li><code>html5.js</code></li>
+			<li><code>selectivizr.js</code></li>
+			<li><code>excanvas.min.js</code></li>
+		</ul>
+	</li>
+	<li>jQuery and plugins:
+		<ul>
+			<li><code>jquery-1.4.4.min.js</code></li>
+			<li><code>jquery-ui-1.8.8.custom.min.js</code> : jQuery UI, for date picker and sortable elements</li>
+			<li><code>jquery.validate.min.js</code> : for form validation</li>
+			<li><code>jquery.uniform.min.js</code> : for styling checkbox, radio buttons and input file</li>
+			<li><code>jquery.wysiwyg.js</code> : for converting textarea to HTML editor</li>
+			<li><code>superfish.js</code> : for multi-level dropdown menu</li>
+			<li><code>cufon-yui.js</code> : for font replacement</li>
+			<li><code>Delicious_500.font.js</code> : Delicious font (used with cufon-yui.js)</li>
+			<li><code>jquery.flot.min.js</code> : for creating charts</li>
+			<li><code>facebox.js</code> : for modal boxes</li>
+			<li><code>jquery.dataTables.min.js</code> : for table</li>
+			<li><code>jquery.cookie.js</code> : for storing cookies</li>
+		</ul>
+	<li>My custom script:
+		<ul>
+			<li><code>custom.js</code></li>
+			<li><code>switcher.js</code>: color switcher and fixed/fluid switcher</li>
+		</ul>
+	</li>
+	</li>
+</ul>
+
+<p>The custom.js contains scripts for setting plugins or add custom scripts, e.g. tabs, accordion, toggle boxes, checkall checkboxes, detail table, and message boxes. This file is commented so you can easily find each sections.</p>
+<p>To disable plugins, delete the <code>&lt;script src=&quot;js/plugin-name.js&quot;&gt;</code> (in the html file), and the scripts in <code>custom.js</code>. For example: if you don&#39;t want to use the WYSIWYG editor, delete this:</p>
+
+<pre class="code" lang="html">
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/jquery.wysiwyg.css&quot;&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.wysiwyg.js&quot;&gt;&lt;/script&gt;
+</pre>
+and also delete this in <code>custom.js</code>:
+<pre class="code" lang="javascript">
+/* wysiwyg editor
+------------------------------------------------------------------------- */
+$(&#39;#wysiwyg&#39;).wysiwyg();
+$(&#39;#newscontent&#39;).wysiwyg();
+</pre>
+		
+		<p>To view more about plugins usage, you can click the links of each plugins in Sources and Credits below.</p>
+
+</section>
+
+<section id="sources_and_credits">
+	<h3>Sources and Credits</h3><hr class="notop">
+		<p>I've used the following scripts and icons:
+		
+		<ul>
+			<li><a href="http://jqueryui.com/">jQuery UI</a></li>
+			<li><a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">Validation</a></li>
+			<li><a href="http://users.tpg.com.au/j_birch/plugins/superfish/">Superfish</a></li>
+			<li><a href="http://pixelmatrixdesign.com/uniform/">Uniform</a></li>
+			<li><a href="http://code.google.com/p/jwysiwyg/">jWYSIWYG</a></li>
+			<li><a href="http://code.google.com/p/flot/">flot</a></li>
+			<li><a href="http://famspam.com/facebox/">facebox</a></li>
+			<li><a href="http://www.datatables.net/">DataTables</a></li>
+			<li><a href="http://p.yusukekamiyamane.com/">Fugue Icons</a></li>
+			<li><a href="http://www.elegantthemes.com/blog/resources/elegant-themes-icon-pack-for-free">Elegant Themes Icon Pack</a></li>
+			<li><a href="http://www.josbuivenga.demon.nl/delicious.html">Delicious Font</a></li>
+			<li><a href="http://cufon.shoqolate.com/">Cufon</a></li>
+			<li><a href="http://www.spry-soft.com/grids/">Variable Grid System</a></li>
+			<li><a href="http://selectivizr.com/">Selectivizr (CSS3 selectors for IE)</a></li>
+			<li><a href="http://css3pie.com/">PIE</a></li>
+		</ul>
+</section>
+
+	</div>
+</body>
+</html>
